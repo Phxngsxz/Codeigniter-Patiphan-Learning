@@ -1,0 +1,2 @@
+New item created successfully
+<a href="/news">Go back to news page</a>

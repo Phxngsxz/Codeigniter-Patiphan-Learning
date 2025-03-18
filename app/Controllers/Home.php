@@ -9,6 +9,13 @@ class Home extends BaseController
         return view('welcome_message');
     }
 
-    
-
+    public function testDB()
+    {
+        $db = \Config\Database::connect();
+        if ($db->connect_error) {
+            echo "Database Connection Error: " . $db->connect_error;
+        } else {
+            echo "Database Connected Successfully!";
+        }
+    }
 }
